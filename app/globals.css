@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #05060a;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-image: var(--mesh-background);
+}
+
+:root {
+  --mesh-background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.2), transparent 35%), radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.2), transparent 35%), radial-gradient(circle at 50% 80%, rgba(34, 211, 238, 0.2), transparent 40%);
+}
+
+.glass {
+  @apply bg-slate-900/60 border border-slate-700/60 backdrop-blur-xl;
+}
